@@ -1,0 +1,126 @@
+/* Define Color Pallette so one can easily alter this */
+:root{
+    --neutral:#EFEFEF;
+    --gray:#A9A9A9;
+    --blue:#008F95;
+    --red:#E24E42;
+    --blackboard:#777777;
+}
+
+/* General Body Edits */
+html {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  color: black;
+  line-height: 1.65;
+}
+
+/* Navbar Colors */
+nav.navbar a.navbar-brand:hover {
+  color: var(--red);
+}
+
+nav.navbar div.navbar-collapse ul.nav li.nav-item a:hover {
+  color: var(--red);
+}
+
+nav.navbar li.nav-item.active a {
+  color:var(--red);
+}
+
+nav.navbar li.nav-item:visited {
+  color:var(--red);
+}
+
+/* Lists */
+ul, ol, dl {
+  color: black;
+}
+
+ul.ul-edu li .description p.institution {
+  color: var(--blackboard);
+}
+
+/* Hyperlinks */
+a:link, a:visited {
+  color: var(--red);
+}
+
+a:hover {
+  color: black;
+}
+
+/* General Description Below Profile Picture */
+div#profile .portrait-title h2 {
+  color: black;
+}
+
+div#profile .portrait-title h3 {
+  color: var(--blackboard);
+}
+
+
+/* Section Background Colors */
+section#about {
+  background: white;
+}
+
+section#publications {
+  background: var(--neutral);
+}
+
+section#projects {
+  background: white;
+}
+
+section#talks {
+  background: var(--neutral);
+}
+
+section#contact {
+  background: white;
+}
+
+footer {
+  background:white;
+}
+
+/* Section Headers */
+h1 {
+  color: black;
+  font-size: 20pt;
+}
+
+/* Gray Section Text */
+section#publications div.row p {
+  color: var(--gray);
+}
+
+section#contact div.row p {
+  color:var(--gray);
+}
+
+section#projects div.row p {
+  color:var(--gray);
+}
+
+/* Conference Locations */
+div.talk-event {
+  color:var(--blue);
+}
+
+div.paper-title {
+  color:var(--blue);
+}
+
+/* Publication Link Buttons */
+section#publications a.btn.btn-primary.btn-outline, a.btn.btn-primary.btn-outline:visited {
+  border-color:black;
+  color:black;
+}
+
+section#publications a.btn.btn-primary.btn-outline:hover {
+  color:white;
+  border-color:var(--red);
+  background-color:var(--red);
+}

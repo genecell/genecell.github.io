@@ -1,0 +1,131 @@
+/* Define Color Pallette so one can easily alter this */
+:root{
+    --dark-color:#000000;
+    --light-color: #F4F4F4;
+    --light-gray: #A9A9A9;
+    --dark-gray: #4c4c4c;
+    --alt-one: #062F4F;
+    --alt-two: #813772;
+    --alt-three: #971f01;
+}
+
+
+/* General Body Edits */
+html {
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  color: var(--dark-color);
+  line-height: 1.65;
+}
+
+/* General Description Below Profile Picture */
+div#profile .portrait-title h2 {
+  color: var(--dark-color);
+}
+
+div#profile .portrait-title h3 {
+  color: var(--dark-gray);
+}
+
+/* Lists */
+ul, ol, dl {
+  color: var(--dark-color);
+}
+
+ul.ul-edu li .description p.institution {
+  color: var(--dark-gray);
+}
+
+/* List Headers */
+h3 {
+  color: var(--dark-color);
+}
+
+/* Section Headers */
+h1 {
+  color: var(--dark-color);
+  font-size: 20pt;
+}
+
+/* Navbar Colors */
+nav.navbar {
+  background: var(--dark-color);
+}
+
+nav.navbar a.navbar-brand {
+  color: var(--light-color);
+}
+
+nav.navbar a.navbar-brand:hover {
+  color: var(--light-gray);
+}
+
+nav.navbar div.navbar-collapse ul.nav li.nav-item a {
+  color: var(--light-color);
+}
+
+nav.navbar div.navbar-collapse ul.nav li.nav-item a:hover {
+  color: var(--light-gray);
+}
+
+/* Publication Text Color */
+section#publications div.pub-authors {
+  color: var(--alt-three);
+}
+
+section#publications div.pub-publication {
+  color: var(--dark-gray);
+}
+
+/* Section Background Colors */
+
+section#about {
+  background: var(--light-color);
+}
+
+section#projects {
+  background: var(--light-color);
+}
+
+section#publications {
+  background: var(--light-gray);
+}
+
+section#contact {
+  background: var(--light-color);
+}
+
+/* Project Filter Buttons */
+section#projects div.btn-group a.btn.btn-primary.btn-large {
+  color: #FFFFFF;
+}
+
+/* Hyperlinks */
+a:link, a:visited {
+  color: var(--alt-three);
+}
+
+a:hover {
+  color: var(--dark-color);
+}
+
+/* Modifying text in Contact */
+section#contact h1 {
+  color: var(--dark-color);
+}
+
+section#contact span {
+  color: var(--dark-color);
+}
+
+section#contact i {
+  color: var(--dark-color);
+}
+
+section#contact a:hover {
+  color: var(--dark-color);
+}
+
+section#contact a:visited, a:link {
+  color: var(--alt-three);
+}
