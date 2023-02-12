@@ -1,3 +1,3 @@
 ### Contact
 
-Min Dai, daimin@zju.edu.cn
+Min Dai, dai@broadinstitute.org
