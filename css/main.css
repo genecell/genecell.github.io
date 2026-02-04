@@ -72,12 +72,12 @@ div#profile .portrait-title h3 {
 
 /* B7: Social icon consistent sizing and hover color */
 #profile .social-icon a {
-  color: var(--blackboard);
+  color: var(--red);
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
 #profile .social-icon a:hover {
-  color: var(--red);
+  color: var(--blue);
 }
 
 /* Section Background Colors */
