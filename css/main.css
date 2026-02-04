@@ -7,12 +7,13 @@
     --blackboard:#777777;
 }
 
-/* General Body Edits */
+/* B8: Smooth scroll behavior */
 html {
   font-family: 'Merriweather', serif;
   font-size: 16px;
   color: black;
   line-height: 1.65;
+  scroll-behavior: smooth;
 }
 
 /* Navbar Colors */
@@ -59,6 +60,25 @@ div#profile .portrait-title h3 {
   color: var(--blackboard);
 }
 
+/* B6: Portrait shadow enhancement */
+#profile .portrait {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+#profile .portrait:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* B7: Social icon consistent sizing and hover color */
+#profile .social-icon a {
+  color: var(--blackboard);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+#profile .social-icon a:hover {
+  color: var(--red);
+}
 
 /* Section Background Colors */
 section#about {
@@ -69,9 +89,6 @@ section#publications {
   background: var(--neutral);
 }
 
-section#projects {
-  background: white;
-}
 
 section#talks {
   background: var(--neutral);
@@ -91,18 +108,15 @@ h1 {
   font-size: 20pt;
 }
 
-/* Gray Section Text */
+/* B4: Publication text color - improved readability */
 section#publications div.row p {
-  color: var(--gray);
+  color: #666;
 }
 
 section#contact div.row p {
   color:var(--gray);
 }
 
-section#projects div.row p {
-  color:var(--gray);
-}
 
 /* Conference Locations */
 div.talk-event {
@@ -113,14 +127,63 @@ div.paper-title {
   color:var(--blue);
 }
 
-/* Publication Link Buttons */
+/* B9: Button style refinement */
 section#publications a.btn.btn-primary.btn-outline, a.btn.btn-primary.btn-outline:visited {
   border-color:black;
   color:black;
+  border-radius: 3px;
+  font-size: 0.85em;
+  padding: 4px 10px;
+  transition: all 0.2s ease;
 }
 
 section#publications a.btn.btn-primary.btn-outline:hover {
   color:white;
   border-color:var(--red);
   background-color:var(--red);
+}
+
+/* B2: Publication entry hover accent border */
+section#publications li[itemscope] {
+  padding: 12px 0 12px 8px;
+  margin-bottom: 8px;
+  border-left: 3px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+section#publications li[itemscope]:hover {
+  border-left-color: var(--blue);
+}
+
+/* B3: Journal name readability */
+section#publications div > i > b {
+  color: #333;
+}
+
+/* B10: Google Scholar link styling below heading */
+section#publications .section-heading p a {
+  color: var(--blue);
+  font-weight: 400;
+}
+
+section#publications .section-heading p a:hover {
+  color: var(--red);
+}
+
+/* B5: Skills section formatting */
+section#Skills li {
+  font-weight: 700;
+  color: var(--blue);
+  list-style: none;
+  margin-top: 12px;
+}
+
+section#Skills li:first-child {
+  margin-top: 0;
+}
+
+section#Skills p {
+  color: #555;
+  margin-top: 2px;
+  margin-bottom: 8px;
 }
